@@ -1,0 +1,270 @@
+.card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(173, 216, 230, 0.3) 100%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.form-control {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 224, 0.3) 100%);
+  border-radius: 10px;
+  border: 2px solid rgba(173, 216, 230, 0.5);
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.calendar-btn {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border: 2px solid rgba(173, 216, 230, 0.5);
+  color: #2c3e50;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.calendar-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+::ng-deep .ngb-dp-header {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 10px 10px 0 0;
+  padding: 15px;
+}
+
+::ng-deep .ngb-dp-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+::ng-deep .btn-light {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 224, 0.3) 100%);
+  border: 1px solid rgba(173, 216, 230, 0.5);
+  color: #2c3e50;
+}
+
+::ng-deep .btn-light:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+::ng-deep .bg-primary {
+  background: linear-gradient(45deg, #667eea, #764ba2) !important;
+}
+
+::ng-deep .ngb-dp-day.bg-primary {
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.clear-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  border: 1px solid #ff6b6b;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(255, 107, 107, 0.4);
+}
+
+.form-label {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.d-flex.gap-2 {
+  gap: 8px;
+}
+
+.today-btn {
+  background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%);
+  border: 1px solid #17a2b8;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.today-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(23, 162, 184, 0.4);
+}
+
+::ng-deep .ngb-dp-footer {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(173, 216, 230, 0.3) 100%);
+  border-top: 1px solid rgba(173, 216, 230, 0.5);
+  border-radius: 0 0 10px 10px;
+}
+
+::ng-deep .ngb-dp-navigation-select {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(173, 216, 230, 0.5);
+  border-radius: 5px;
+  color: #2c3e50;
+}
+
+::ng-deep .ngb-dp-arrow {
+  color: #667eea;
+  font-weight: bold;
+}
+
+::ng-deep .ngb-dp-arrow:hover {
+  color: #764ba2;
+}
+
+.input-group {
+  position: relative;
+}
+
+::ng-deep .ngb-dp-popup {
+  transform: translateX(0) !important;
+  margin-top: 5px !important;
+}
+
+::ng-deep .ngb-dp-popup {
+  z-index: 1060 !important;
+  position: fixed !important;
+}
+
+.card {
+  margin-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .card {
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .input-group {
+    flex-wrap: wrap;
+  }
+  
+  .calendar-btn, .today-btn, .clear-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  .list-group-item {
+    padding: 15px;
+  }
+  
+  .list-group-item div {
+    font-size: 14px;
+  }
+  
+  .list-group-item div div {
+    margin-bottom: 5px;
+  }
+}
+
+::ng-deep .mat-form-field {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 224, 0.3) 100%);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background: transparent;
+}
+
+::ng-deep .mat-datepicker-content {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+::ng-deep .mat-calendar-header {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px 10px 0 0;
+}
+
+::ng-deep .mat-calendar-body-selected {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.list-group {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.list-group-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 182, 193, 0.2) 100%);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 224, 0.4) 100%);
+  transform: translateX(5px);
+}
+
+.list-group-item button {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.list-group-item button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(220, 53, 69, 0.4);
+}
